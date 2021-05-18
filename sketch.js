@@ -2,6 +2,15 @@ var streams = [];
 var fadeInterval = 1.6;
 var symbolSize = 14;
 
+addEventListener("keydown", (e) => {
+  if (e.key === "F11") {
+    createCanvas(
+      window.innerWidth,
+      window.screen.height
+    )
+  }
+});
+
 function setup() {
   createCanvas(
     window.innerWidth,
